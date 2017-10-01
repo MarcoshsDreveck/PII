@@ -1,0 +1,29 @@
+Comandos de configurações iniciais
+
+git config --global user.email "juliana_macaneiro@estudante.sc.senai.br"
+git config --global user.email "JuMacaneiro"
+
+---------------------------------
+comando para clonar repositório
+git clone https://github.com/MarcoshsDreveck/PII.git
+
+-----------------------------
+A partir daqui iremos usar direto
+----------------
+Comando para verificar o status dos arquivos (alterados) na máquina
+
+git status
+
+
+Comando pegar conteudo novo da internet
+
+git pull origin master
+
+--------------------
+Procedimento Comando enviar conteudo novo
+git add .
+git commit -m "Mensagem da alteração"
+git push origin master
+
+
+

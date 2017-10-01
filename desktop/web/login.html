@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html lang="t-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-lg-12" style="width: 80%; text-align: center;">
+          <h2>Login </h2>
+          <form action="#" method="post" accept-charset="utf-8">
+            <label for="email" style="width: 120px; text-align: left;">E-mail: </label>
+            <input type="text" name="email" placeholder="E-mail"><br><br>
+            <label for="senha" style="width: 120px; text-align: left;">Senha: </label>
+            <input type="password" name="senha" placeholder="Senha"><br><br>
+          </br>
+            <div id="fb-root"></div>
+
+            <script>
+              (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10&appId=2016835055220572";
+                fjs.parentNode.insertBefore(js, fjs);
+              }(document, 'script', 'facebook-jssdk'));
+
+            </script>
+
+            <script>
+              function statusChangeCallback(response) {
+                console.log('statusChangeCallback');
+                console.log(response);
+
+                if (response.status === 'connected') {
+
+                  testAPI();
+                } else {
+                  document.getElementById('status').innerHTML =
+                    "";
+
+                }
+              }
+
+              function checkLoginState() {
+                FB.getLoginStatus(function (response) {
+                  statusChangeCallback(response);
+                });
+              }
+
+              window.fbAsyncInit = function () {
+                FB.init({
+                  appId: '2016835055220572',
+                 cookie: true,  
+                  xfbml: true,
+                  version: 'v2.8'
+                });
+
+                FB.getLoginStatus(function (response) {
+                  statusChangeCallback(response);
+                });
+
+              };
+
+              function testAPI() {
+                console.log('Welcome!  Fetching your information.... ');
+                FB.api('/me', { fields: 'name, last_name, email' }, function (response) {
+                  console.log('Successful login for: ' + response.name);
+                  document.getElementById('status').innerHTML =
+                    'Olá ' + response.name + '!' + '<br>' + 'Nome completo: ' + response.name + ' ' + response.last_name + '<br>' + 'Email: ' + response.email;
+                });
+              }
+
+            </script>
+            <div class="fb-login-button" data-max-rows="1" data-size="medium" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="true"
+              data-use-continue-as="false" onlogin="checkLoginState();" scope="public_profile,email"></div>
+
+            <div id="status">
+            </div>          
+
+              </br>
+            <button class="botao btn btn-primary" onClick="javascript:window.location.href = 'cadastroempresa.html'">Cadastre-se</button>
+            <input class="botao btn btn-primary" type="submit" name="button2" id="button2" value="Avançar" style="width: 100px; text-align: center;"
+              onclick="form.action='empresa.html'; form.submit()" />
+                 <script type="in/Login" id="logar"></script>
+
+    <script type="text/javascript" src="https://platform.linkedin.com/in.js">
+      api_key:  jJ4z55Cxz2dEzky2
+      authorize: true
+      onLoad: onLinkedInLoad
+      lang: pt_BR
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            $('#deslogar').hide();    
+            
+            $('#deslogar').click(function(){
+                IN.User.logout();
+            });
+        });
+
+        function onLinkedInLoad() {
+            IN.Event.on(IN, "auth", getProfileData);
+        }
+
+        function onSuccess(data) {
+            console.log(data);
+            $('#nome').append("Nome : " + data.firstName + " " + data.lastName);
+            $('#empresa').append("Empresa : " + data.headline);
+            console.log(data);
+            $('#deslogar').show();
+        }
+
+        function onError(error) {
+            $('#logar').show(); 
+            console.log(error);
+        }
+
+        function getProfileData() {
+            IN.API.Raw("/people/~").result(onSuccess).error(onError);
+        }
+
+    </script>
+
+  <div id="linkedin">
+      <p id="nome"> </p>
+      <p id="empresa"> </p>
+
+
+      <button id="deslogar"> Deslogar </button> 
+  </div>
+
+        </div>
+      </div>
+    </div>
+  
+  </body>
+
+</html>

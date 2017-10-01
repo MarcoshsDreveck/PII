@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CADASTRO EMPRESA</title> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Jaldi|Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.css">    
+        <link rel="stylesheet" href="css/style.css">            
+    </head>
+
+    <body>
+        <div class="container-fluid">   
+            <div class="row">   
+
+
+                <h1 class="text-center">Dados da empresa </h1>
+                <div>
+                    <div class="text-right col-lg-12">
+                        <a class="ajuda" href="ajudacadastroempresa.html "><p>Ops, não entendi </p><i class="fa fa-question fa-2x" aria-hidden="true" style= " text-align: right;"></i></a>
+                        <div>
+
+
+
+                            <div class="text-center col-lg-12">
+                                <form action="CadastroEmpresa" method="POST">
+                                    <fieldset>
+                                        <label for="nome" style="width: 200px; text-align: left;">Nome: </label>
+                                             <input type="text" name="nome" placeholder="Nome" ><br><br>
+                                        <label for="razaosocial" style="width: 200px; text-align: left;">Razão Social: </label>
+                                             <input type="text" name="razaosocial" placeholder="Razão Social" ><br><br>
+                                        <label for="telefone" style="width: 200px; text-align: left;">Telefone: </label>
+                                             <input type="text" name="telefone" placeholder="Telefone" ><br><br>
+                                        <label for="endereco" style="width: 200px; text-align: left;">Endereço: </label>
+                                             <input type="text" name="endereco" placeholder="Endereço" ><br><br> 
+                                        <label  for="CNPJ" style="width: 200px; text-align: left;">CNPJ</label>
+                                             <input type="text" name="cnpj" placeholder="CNPJ" ><br><br>
+                                        <label for="redesocial" style="width: 200px; text-align: left;">Rede Social: </label>
+                                             <input type="text" name="redesocial" placeholder="Rede Social" ><br><br> 
+                                        <label for="site" style="width: 200px; text-align: left;">Site: </label>
+                                             <input type="text" name="site" placeholder="Site" ><br><br> 
+                                        <label for="email" style="width: 200px; text-align: left;">E-mail: </label>
+                                             <input type="text" name="email" placeholder="E-mail" ><br><br>
+                                        <label for="senha" style="width: 200px; text-align: left;">Senha: </label>
+                                            <input type="password" name="senha" placeholder="Senha"><br><br>
+
+                                    </fieldset>
+                                    <br/>
+
+                                    <input  class="botao btn btn-primary" type="submit" name="button" id="button" value=seguir />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="js/jquery-3.2.1.min.js"></script> 
+    </body>
+</html>

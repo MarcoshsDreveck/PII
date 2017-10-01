@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pagamento</title>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.css">  
+    <link rel="stylesheet" href="css/style.css">  
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">     
+        <div class="text-center col-lg-12">
+          <header id="header">
+            <nav class="menu">    
+              <div class="logo">
+                <a href="#"><!--<i class="fa fa-camera" aria-hidden="true"></i>--></a>  
+                <a href="#" > <i id="btn-menu" class="icono fa fa-bars" aria-hidden="true"> Menu</i> </a>     
+              </div>
+              <div class="enlaces" id="enlaces">              
+                <a href="meiosdepagamento.html">Pagamento</a>
+              <div class="enlaces" id="enlaces">              
+                <a href="Ajudaempresa.html">Ajuda</a>
+               <a href="#" onclick="window.history.back();">Voltar</a>                                
+              </div>
+            </nav>
+          </header>
+        </div>
+      </div>
+
+    <div class="w3-container w3-center w3-animate-zoom">
+      <h2 class="topo">Galeria</h2></div>
+      <div class="w3-container w3-animate-zoom">
+        <h4>Imagens recebidas</h4>
+      </div>
+
+      <div class="row"> 
+           <div class="empresa text-center col-lg-4">
+               <img src="http://www.failwars.blog.br/wp-content/uploads/2013/11/failwars-poster-em-alta-resolucao-hobbit.jpg" alt="ceiling lamp" style="width:100%;cursor:pointer"
+                onclick="onClick(this)">
+                <a href="selecionadas" class="icone glyphicon glyphicon-shopping-cart" style="font-size:1.1em; color:#292E1E;">
+                   Selecionar &nbsp;</a> <a href="selecionadas" class="icone glyphicon glyphicon-trash" style="font-size:1.1em; color:#292E1E;">
+                   Apagar</a>
+          </div>      
+         <div class="empresa text-center col-lg-4">
+               <img src="http://www.failwars.blog.br/wp-content/uploads/2013/11/failwars-poster-em-alta-resolucao-hobbit.jpg" alt="ceiling lamp" style="width:100%;cursor:pointer"
+                onclick="onClick(this)" class="w3-hover-opacity">
+                <a href="selecionadas" class="icone glyphicon glyphicon-shopping-cart" style="font-size:1.1em; color:#292E1E;">
+                   Selecionar &nbsp;&nbsp;</a> <a href="selecionadas" class="icone glyphicon glyphicon-trash" style="font-size:1.1em; color:#292E1E;">
+                   Apagar </a>
+          </div>  
+              <div class="empresa text-center col-lg-4">
+                <img src="http://www.failwars.blog.br/wp-content/uploads/2013/11/failwars-poster-em-alta-resolucao-hobbit.jpg" alt="ceiling lamp" style="width:100%;cursor:pointer"
+                onclick="onClick(this)" class="w3-hover-opacity">
+                <a href="selecionadas" class="icone glyphicon glyphicon-shopping-cart" style="font-size:1.1em; color:#292E1E;">
+                   Selecionar &nbsp;&nbsp;</a> <a href="selecionadas" class="icone glyphicon glyphicon-trash" style="font-size:1.1em; color:#292E1E;">
+                   Apagar </a>
+              </div> 
+      </div> 
+        
+        <div class="row"> 
+          <div class="empresa text-center col-lg-4">
+               <img src="http://www.failwars.blog.br/wp-content/uploads/2013/11/failwars-poster-em-alta-resolucao-hobbit.jpg" alt="ceiling lamp" style="width:100%;cursor:pointer"
+                onclick="onClick(this)" class="w3-hover-opacity">
+                    <a href="selecionadas" class="icone glyphicon glyphicon-shopping-cart" style="font-size:1.1em; color:#292E1E;">
+                   Selecionar &nbsp;&nbsp;</a> <a href="selecionadas" class="icone glyphicon glyphicon-trash" style="font-size:1.1em; color:#292E1E;">
+                   Apagar </a>
+          </div>       
+         <div class="empresa text-center col-lg-4">
+              <img src="http://www.failwars.blog.br/wp-content/uploads/2013/11/failwars-poster-em-alta-resolucao-hobbit.jpg" alt="ceiling lamp" style="width:100%;cursor:pointer"
+                onclick="onClick(this)" class="w3-hover-opacity">
+                <a href="selecionadas" class="icone glyphicon glyphicon-shopping-cart" style="font-size:1.1em; color:#292E1E;">
+                   Selecionar &nbsp;&nbsp;</a> <a href="selecionadas" class="icone glyphicon glyphicon-trash" style="font-size:1.1em; color:#292E1E;">
+                   Apagar </a>
+          </div>     
+              <div class="empresa text-center col-lg-4">
+              <img src="http://www.failwars.blog.br/wp-content/uploads/2013/11/failwars-poster-em-alta-resolucao-hobbit.jpg" alt="ceiling lamp" style="width:100%;cursor:pointer"
+                onclick="onClick(this)" class="w3-hover-opacity">
+                <a href="selecionadas" class="icone glyphicon glyphicon-shopping-cart" style="font-size:1.1em; color:#292E1E;">
+                   Selecionar &nbsp;&nbsp;</a> <a href="selecionadas" class="icone glyphicon glyphicon-trash" style="font-size:1.1em; color:#292E1E;">
+                   Apagar </a>
+          </div>  
+        </div>
+       
+      
+
+
+<script >
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+
+</script>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>  
+  <script src="js/headroom.min.js"></script>
+  <script src="js/menu.js"></script>  
+  
+  </body>
+</html>

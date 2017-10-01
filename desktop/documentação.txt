@@ -1,0 +1,70 @@
+Login
+
+Login para Feed necessitará de autenticação no gmail, linkedin ou facebook.
+Para envio ou compra de imagens irá precisar cadastro na plataforma.
+Terá dois tipos de cadastro o de "empresa compradora" e "usuário entusiasta".
+
+Ao logar
+usuário bisbilhoteiro cai no Feed
+Usuário entusiasta  e empresa cai nos desafios
+
+----------------------------------
+Feed (linha do tempo) --Construir exibição e cadastro.
+
+Irá exibir as imagens escolhidas (compradas), as que receberam badges de engraçadas e criativas, com o logo da empresa que lançou o desafio bem como a descrição do mesmo.
+
+Inbound marketing (conteudo sobre a propria plataforma), trazendo facilidades da plataforma, dicas de uso, dicas de fotografia, dicas de cameras.
+Possibilidade de liberação para usuários (falta definir como) e empresas enviarem suas dicas, as dicas passarão por moderadores da plataforma.
+
+As empresas poderão adquirir imagens com badges de engraçadas e criativas, não as emplacadas.
+
+Possibilidade de comentários, likes e share
+---------------------------------
+Menu
+Logo ao lado do menu
+
+Index: Menu, entrar, cadatre-se, sobre (ajuda, contato)
+Usuário bisbilhoteiro (qualquer usuário): Menu, Envie imagem, Compre imagem, sobre (ajuda, contato)
+Usuário estusiasta (usuário que participa dos desafios): Menu, Feed,desafios, perfil, sobre (ajuda, contato)
+Usuário empresa (compra imagem): Menu, Feed, Desafios, perfil, sobre (ajuda, contato)
+
+
+
+------------------------------------
+Index
+
+Menu superior
+Banner full width
+Ilustração do ciclo de desafio (Nova imagem)
+Explicação básica do sobre
+
+-----------------------------------------
+Página de perfil de usuario (entusiasta)
+
+Dados pessoais, dados de conta bancaria, moedas, desafios participando e participados.
+
+-----------------------------------------
+Página de perfil de empresa
+
+Dados da empresa, dados de pagamento, estoque de moedas, desafios participando e participados.
+
+------------------------------------------
+Banco de dados
+
+/*Tab Usuario (Nome, tipo de usuário, CNPJ/CPF)
+Tab tipos de usuário - (ID, Descrição) empresa, entusiasta, bisbilhoteiro*/
+--Tirar dúvida com a tathi se um servlet consegue atualizar mais que uma tabela.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,129 @@
+  <!DOCTYPE HTML>
+  <html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pagamento</title>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.css">  
+    <link rel="stylesheet" href="css/style.css">  
+  </head>
+  <body >
+
+    <div class="container-fluid">
+      <div class="row">     
+        <div class="text-center col-lg-12">
+          <header id="header">
+            <nav class="menu">    
+              <div class="logo">
+                <a href="#"><!--<i class="fa fa-camera" aria-hidden="true"></i>--></a>  
+                <a href="#" > <i id="btn-menu" class="icono fa fa-bars" aria-hidden="true"> Menu</i> </a>     
+              </div>
+              <div class="enlaces" id="enlaces">              
+               <a href="Ajudaempresa.html">Ajuda</a>
+               <a href="#" onclick="window.history.back();">Voltar</a>                                  
+             </div>
+           </nav>
+         </header>
+       </div>
+     </div>
+<div class="topo container">
+    <div class="row">
+        <!-- You can make it whatever width you want. I'm making it full width
+             on <= small devices and 4/12 page width on >= medium devices -->
+        <div class="col-xs-12 col-md-4">
+        
+        
+            <!-- CREDIT CARD FORM STARTS HERE -->
+            <div class="panel panel-default credit-card-box">
+                <div class="panel-heading display-table" >
+                    <div class="row display-tr" >
+                        <h3 class="panel-title display-td" >PAGAMENTO</h3>
+                        <div class="display-td" >                            
+                            <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+                        </div>
+                    </div>                    
+                </div>
+                <div class="panel-body">
+                    <form role="form" id="payment-form" method="POST" action="javascript:void(0);">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label for="cardNumber">NÚMERO DO CARTÃO</label>
+                                    <div class="input-group">
+                                        <input 
+                                            type="tel"
+                                            class="form-control"
+                                            name="cardNumber"
+                                            placeholder="NÚMERO DO CARTÃO"
+                                            autocomplete="cc-number"
+                                            required autofocus 
+                                        />
+                                        <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+                                    </div>
+                                </div>                            
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-7 col-md-7">
+                                <div class="form-group">
+                                    <label for="cardExpiry"><span class="hidden-xs">VALIDADE</span><span class="visible-xs-inline">EXP</span> DATA</label>
+                                    <input 
+                                        type="tel" 
+                                        class="form-control" 
+                                        name="cardExpiry"
+                                        placeholder="MÊS / ANO"
+                                        autocomplete="cc-exp"
+                                        required 
+                                    />
+                                </div>
+                            </div>
+                            <div class="col-xs-5 col-md-5 pull-right">
+                                <div class="form-group">
+                                    <label for="cardCVC">CVC CÓDIGO</label>
+                                    <input 
+                                        type="tel" 
+                                        class="form-control"
+                                        name="cardCVC"
+                                        placeholder="CVC"
+                                        autocomplete="cc-csc"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label for="couponCode" >CUPOM DESCONTO</label>
+                                    <input type="text" class="form-control" name="couponCode" placeholder="NÚMERO DO CUPOM"/>
+                                </div>
+                            </div>                        
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <button class="subscribe btn btn-success btn-lg btn-block" type="button">ENVIAR</button>
+                            </div>
+                        </div>
+                        <div class="row" style="display:none;">
+                            <div class="col-xs-12">
+                                <p class="payment-errors"></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div> 
+
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+    <script src="js/pagamento.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>  
+    <script src="js/headroom.min.js"></script>
+    <script src="js/menu.js"></script>  
+
+
+  </body>
+  </html>
